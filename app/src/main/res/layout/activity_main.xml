@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:background="@drawable/background">
+
+
+    <!-- Title Section -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Annamarie Cortes ToDoApp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <!-- Task Name (EditText) -->
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:ems="10"
+        android:hint="To Do Name"
+        android:inputType="textPersonName"
+        android:textColor="#2E2E2E"/>
+
+    <!-- Buttons: Add, Clear, Show All Tasks -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20px">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorLightCoral"/>
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorDarkCoral"/>
+
+        <Button
+            android:id="@+id/btnShowAllTasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show All Tasks"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorTeal"/>
+    </LinearLayout>
+
+    <!-- Week Overview Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20px">
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="0"
+            android:max="100"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/progress_layer_combined"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_marginBottom="10px"/>
+
+        <!-- Task Completion Percentages -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10px">
+
+            <TextView
+                android:id="@+id/completedPercentage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Completed: 0%"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/inProgressPercentage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="In Progress: 0%"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/notStartedPercentage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Not Started: 0%"
+                android:textColor="@color/colorLightMint"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Upcoming Tasks Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upcoming Tasks"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10px"
+        android:textColor="@color/colorPrimary"/>
+
+    <!-- Filter Section (Category and Priority Filters) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20px">
+
+        <!-- First Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnCategoryFilter"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Category Filter"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorSecondary"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp" />
+
+            <Button
+                android:id="@+id/btnPriorityFilter"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Priority Filter"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+        <!-- Second Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btnTaskCount"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Task Count"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorAccent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp" />
+
+            <Button
+                android:id="@+id/btnResetFilter"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Reset Filter"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorPrimary"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- List of Tasks -->
+    <ListView
+        android:id="@+id/lstView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20px" />
+
+</LinearLayout>

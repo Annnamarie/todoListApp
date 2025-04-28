@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF8E72</color>
+    <color name="colorSecondary">#4CE0B3</color>
+    <color name="colorAccent">#FFAF87</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorLightPeach">#FFAF87</color>
+    <color name="colorLightCoral">#FF8E72</color>
+    <color name="colorDarkCoral">#ED6A5E</color>
+    <color name="colorLightMint">#4CE0B3</color>
+    <color name="colorTeal">#377771</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+</resources>

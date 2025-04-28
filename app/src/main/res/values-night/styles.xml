@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorSecondary">#000000</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorLightPeach">#5A5A5A</color>
+    <color name="colorLightCoral">#5A5A5A</color>
+    <color name="colorDarkCoral">#808080</color>
+    <color name="colorLightMint">#848884</color>
+    <color name="colorTeal">#C0C0C0</color>
+    <color name="colorBackground">#000000</color>
+    <color name="black">#000000</color>
+</resources>
+
+

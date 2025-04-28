@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Due Date Field -->
+    <EditText
+        android:id="@+id/editDueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Due Date (e.g., 2025-02-02)"
+        android:inputType="date"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"/>
+
+    <!-- Category Field -->
+    <EditText
+        android:id="@+id/editCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Category"
+        android:inputType="text"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"/>
+
+    <!-- Priority Field -->
+    <EditText
+        android:id="@+id/editPriority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Priority (High/Medium/Low)"
+        android:inputType="text"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"/>
+
+    <!-- Status Dropdown (Spinner) -->
+    <Spinner
+        android:id="@+id/spinnerStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/task_status_options"
+        android:layout_marginBottom="10dp" />
+</LinearLayout>

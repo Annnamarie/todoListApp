@@ -1,0 +1,31 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background layer -->
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="@color/colorLightMint"/>
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+
+    <!-- 'In Progress'  -->
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <solid android:color="@color/colorLightCoral"/>
+                <corners android:radius="20dp"/>
+            </shape>
+        </clip>
+    </item>
+
+    <!-- 'Completed' -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <solid android:color="@color/colorPrimaryDark"/>
+                <corners android:radius="20dp"/>
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>
